@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+    <style>
+        table, td , th {border: 1px solid black;}
+        th, td {padding: 10px;}
+        .Nome {background-color: blueviolet;}
+        .Email {background-color: chartreuse;}
+        .Cargo {background-color: chocolate;}
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="Nome">
+            <col class="Email">
+            <col class="Cargo">
+        </colgroup>
+        <thead>
+            <caption>Lista de Clientes</caption>
+            <th>Nome:</th>
+            <th>Email:</th>
+            <th>Cargo</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kauan</td>
+                <td>kauan@email.com</td>
+                <td>Desenvolvedor</td>
+            </tr>
+            <tr>
+                <td>Victor</td>
+                <td>victor@email.com</td>
+                <td>Desenvolvedor</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

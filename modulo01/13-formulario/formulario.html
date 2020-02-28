@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aprendendo formulário" />
+    <meta name="keywords" content="Formulário HTML5" />
+    <meta name="author" content="Kauan" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="cadastro.php" method="POST">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        Nome: <br />
+        <input type="text" name="nome" required autofocus /> <br />
+
+        Senha: <br />
+        <input type="password" name="senha" /> <br />
+
+        Email: <br />
+        <input
+          type="email"
+          name="email"
+          required
+          autocomplete="off"
+          placeholder="seuemail@gmail.com"
+        />
+        <br />
+
+        Imagem: <br />
+        <input type="file" name="imagem" /> <br />
+        <br />
+
+        Data: <br />
+        <input type="date" name="data" min="2001-01-01" /> <br /><br />
+
+        Hora: <br />
+        <input type="time" name="hora" /> <br /><br />
+
+        Mês: <br />
+        <input type="month" name="mes" /> <br /><br />
+
+        Semana: <br />
+        <input type="week" name="semana" /> <br /><br />
+
+        Data e Hora: <br />
+        <input type="datetime-local" name="datahora" /> <br /><br />
+
+        Mensagem: <br />
+        <textarea name="mensagem" cols="30" rows="10"></textarea> <br /><br />
+        <button type="button">Clique-me</button> <br /><br />
+
+        Selecione seu veiculo: <br />
+        <select name="veiculo">
+          <optgroup label="Carros">
+            <option value="camaro">Camaro</option>
+            <option value="hillux">Hillux</option>
+          </optgroup>
+          <optgroup label="Motos">
+            <option value="pop100">POP 100</option>
+            <option value="zig-50">Zig-50</option>
+          </optgroup>
+        </select>
+        <br /><br />
+
+        <input type="cursos" list="lista-curso" /> <br /><br />
+
+        <datalist id="lista-curso">
+          <option value="HTML5"> </option>
+          <option value="CSS3"> </option>
+          <option value="PHP"> </option>
+        </datalist>
+
+        URL> <br />
+        <input type="url" name="url" /> <br /><br />
+
+        Search: <br />
+        <input type="search" name="pesquisa" /> <br /><br />
+
+        Telefone: <br />
+        <input type="tel" name="telefone" /> <br /><br />
+
+        Time: <br />
+        <input type="radio" name="time" value="vasco" /> Vasco <br />
+        <input type="radio" name="time" value="botafogo" /> Bota Fogo <br />
+        <input type="radio" name="time" value="fluminense" /> Fluminense <br />
+        <input type="radio" name="time" value="flamengo" checked /> Flamengo
+        <br />
+
+        Cores: <br />
+        <input type="checkbox" name="cores" name="azul" /> Azul <br />
+        <input type="checkbox" name="cores" name="verde" /> Verde <br />
+        <input type="checkbox" name="cores" name="vermelho" checked /> Vermelho
+        <br />
+
+        Quantidade: <br />
+        <input type="number" min="10" max="500" step="10" name="quantidade" />
+        <br /><br />
+        <input type="range" name="outra" /> <br />
+
+        Cor: <br />
+        <input type="color" name="cor" /> <br />
+        <input type="submit" name="btn-enviar" value="Enviar" />
+        <input
+          type="submite"
+          name="btn-cadastrar"
+          formaction="cadastrar.php"
+          formmethod="POST"
+          formtarget="blank"
+          formnovalidate
+          value="Cadastrar"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>
